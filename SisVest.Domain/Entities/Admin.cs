@@ -11,13 +11,19 @@ namespace SisVest.Domain.Entities
     {
         [Key]
         public int AdminId { get; set; }
+
+        [Required]
         public string Login { get; set; }
+
+        [Required]
         public string Senha { get; set; }
+
+        [Required]
         public string NomeTratamento { get; set; }
+
+        [Required]
         public string Email { get; set; }
-
-
-
+        
         public override bool Equals(object obj)
         {
             var adminParam = (Admin)obj;

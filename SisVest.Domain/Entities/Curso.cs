@@ -11,7 +11,11 @@ namespace SisVest.Domain.Entities
     {
         [Key]
         public int CursoId { get; set; }
+
+        [Required]
         public string Descricao { get; set; }
+
+        [Required]
         public int Vagas { get; set; }
         public virtual ICollection<Candidato> Candidatos  { get; set; }
 

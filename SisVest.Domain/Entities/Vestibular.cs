@@ -10,9 +10,17 @@ namespace SisVest.Domain.Entities
     {
         [Key]
         public int VestibularId { get; set; }
+
+        [Required]
         public string Descricao { get; set; }
+
+        [Required]
         public DateTime DataInicioInscricao { get; set; }
+
+        [Required]
         public DateTime DataFimInscricao { get; set; }
+
+        [Required]
         public DateTime DataProva { get; set; }
         public virtual ICollection<Candidato> Candidatos { get; set; }
 
